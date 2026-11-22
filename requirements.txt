@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+websockets
+numpy
+scipy
+soundfile
+silero-vad[onnx-cpu]
+onnxruntime
+faster-whisper
+transformers
+sentencepiece
+protobuf

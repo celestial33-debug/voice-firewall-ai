@@ -1,0 +1,75 @@
+{
+  "hardware": "Local CPU",
+  "clips_evaluated": 6,
+  "accuracy_pct": 66.7,
+  "mean_window_latency_ms": 3084.0,
+  "p95_window_latency_ms": 3314.8,
+  "results": [
+    {
+      "clip": "cloned_attack.wav",
+      "condition": "clean_16kHz",
+      "expected": "ATTACK",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.961,
+      "max_acoustic": 0.994,
+      "max_coercion": 0.9,
+      "avg_latency_ms": 3132.2,
+      "passed": true
+    },
+    {
+      "clip": "cloned_attack_8khz.wav",
+      "condition": "8kHz_mulaw",
+      "expected": "ATTACK",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.959,
+      "max_acoustic": 0.995,
+      "max_coercion": 0.936,
+      "avg_latency_ms": 3123.8,
+      "passed": true
+    },
+    {
+      "clip": "real_normal.wav",
+      "condition": "clean_16kHz",
+      "expected": "SAFE",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.803,
+      "max_acoustic": 0.995,
+      "max_coercion": 0.027,
+      "avg_latency_ms": 3067.7,
+      "passed": false
+    },
+    {
+      "clip": "real_normal_8khz (auto)",
+      "condition": "8kHz_mulaw",
+      "expected": "SAFE",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.766,
+      "max_acoustic": 0.994,
+      "max_coercion": 0.094,
+      "avg_latency_ms": 3038.2,
+      "passed": false
+    },
+    {
+      "clip": "test_scam.wav",
+      "condition": "clean_16kHz",
+      "expected": "ATTACK",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.865,
+      "max_acoustic": 0.996,
+      "max_coercion": 0.984,
+      "avg_latency_ms": 3053.6,
+      "passed": true
+    },
+    {
+      "clip": "test_scam_8khz (auto)",
+      "condition": "8kHz_mulaw",
+      "expected": "ATTACK",
+      "verdict": "CRITICAL_SCAM",
+      "peak_fused_risk": 0.865,
+      "max_acoustic": 0.996,
+      "max_coercion": 0.984,
+      "avg_latency_ms": 3021.2,
+      "passed": true
+    }
+  ]
+}
